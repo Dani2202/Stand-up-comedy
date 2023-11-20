@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -22,3 +22,55 @@ body{
   background-repeat: no-repeat;
 }
 
+button{
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:white;
+  background:  #ff3482;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0,0, 0.3)
+}
+
+button:hover{
+   filter: brightness(95%);
+}
+
+button:active{
+  transform: scale(0.98);
+}
+
+button:disabled{
+  cursor: default;
+  filter: brightness(30%);
+}
+
+h1{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+}
+
+.subtitle-container{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Query: Tablet or Smaller */
+
+@media screen and (max-width:1000px) {
+  .container{
+    background-size: cover;
+    background-position: center center;
+  }
+
+  button{
+    box-shadow: 5px 5px 30px 20px rgba(0, 0,0, 0.5);
+  }
+}
