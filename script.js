@@ -8,7 +8,7 @@ function tellMe(joke) {
 
   let currentIndex = 0;
   let interval;
-  let delay = 2000; // Delay in milliseconds before starting the speech
+  let delay = 3000; // Delay in milliseconds before starting the speech
 
   setTimeout(function () {
     VoiceRSS.speech({
